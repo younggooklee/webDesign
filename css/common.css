@@ -1,0 +1,31 @@
+/* setting */
+*{ margin:0; padding:0; list-style: none; text-decoration: none; box-sizing: border-box; color:inherit; scroll-behavior: smooth;}
+.pointer{ cursor: pointer; }
+.w1200{ width: 1200px; height: 100%; margin:0 auto; }
+.wrap{ width: 1600px; margin:0 auto; }
+::-webkit-scrollbar{ display: none; }
+header{  height: 10vh; background: #333;}
+main{  height: 40vh;  }
+section {  height: 40vh; }
+footer{  height: 10vh; background:#333; display: flex; justify-content: center; align-items: center; color:#fff; font-size: 14px;}
+
+main .w1200{ padding:25px 120px; border-bottom:1px solid lightgray; }
+main .w1200 .title{ line-height: 110px; text-align: center; color:#333;}
+main .w1200 .txt{ line-height: 25px;}
+main .w1200 li{  color:#666; }
+main .w1200 .txt .stitle{ color:#333; }
+.grid-list{ display: grid; grid-template-columns: repeat(4,1fr); grid-gap: 50px; padding-top: 25px; }
+.grid-list .item-list{ display: grid; grid-template-rows: 200px 50px; box-shadow: 2px 2px 15px lightgray; border-radius: 25px;}
+.grid-list .item-list .text-wrap{ line-height: 50px; text-align: center;}
+.grid-list .item-list .circle{ display: flex; justify-content: center; align-items: center; cursor: pointer; transition: background 0.5s;}
+.grid-list .item-list .circle .one{ width: 150px; height: 150px; border:1px solid lightgray; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 50px; transition: 0.5s;}
+.grid-list .item-list .circle .one:hover{ font-size: 65px;  }
+.grid-list .item-list .circle:hover .one{ background: #555; color:#fff;}
+
+.video-list{ height: auto; padding:20px 0 100px;}
+.video-list h3{ padding: 50px 0; font-size: 50px; color:#555; font-weight: normal;}
+.video-list video{ width: 1200px; height: auto; }
+
+nav{ position: fixed; right: 15px; top:50%; transform: translateY(-50%);  }
+nav a{ display: block; line-height: 30px; width: 30px; height: 30px; border:1px solid gray; border-radius: 50%; margin-bottom: 10px; transition: 0.5s; }
+nav a:hover{  background: #333;}
